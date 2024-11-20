@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #efffe5;
+    line-height: 1.6;
+}
+
+header{
+    padding: 0.9em;
+    background-color: #6c647d;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.5em;
+    color: #ffa9bc;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.nav-links{
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #ffa9bc;
+}
+
+.hero{
+    height: 700px;
+    padding: 5em;
+    color: white;
+    /*fix the background*/
+    background-image: url(/git-hub/profolio/images/download.jfif);
+    background-size: 550px;
+    position: relative;
+}
+
+.link{
+    position: absolute;
+    top: 30em;
+    right: 50%;
+    padding: 0.5em;
+    border: 2px solid red;
+    text-decoration: none;
+    background-color: #b47c88;
+    color: #494f13;
+    
+}
+
+#pHero{
+    color: #ffffff;
+    position: absolute;
+    top: 15em;
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 2.6em;
+    text-align: center;
+    color: #000000;
+}
+
+h3{
+    color: #b47c88;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-left: 1em;
+}
+
+.main-sect{
+    padding: 0em;
+}
+
+.sect1, .sect2, .sect4{
+    margin: 2em;
+}
+
+.sect3{
+    background-color: #494f13;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+li{
+    margin: 0.5em;
+    list-style: none;
+}
+
+
+
+
+footer{
+    padding: 2em;
+    background-color: #494f13;
+    color: #052433;
+}
