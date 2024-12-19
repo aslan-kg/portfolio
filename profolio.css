@@ -6,13 +6,14 @@
 }
 
 body{
-    background-color: #efffe5;
-    line-height: 1.6;
+    background-color: #e5eaff;
+    line-height: 1.5;
+    display: grid;
 }
 
 header{
     padding: 0.9em;
-    background-color: #6c647d;
+    background-color: #64677d;
 }
 
 nav{
@@ -25,9 +26,10 @@ nav{
 
 .logo{
     font-size: 1.5em;
-    color: #ffa9bc;
+    color: #6acdff;
     font-weight: bolder;
     font-size: 2em;
+    margin: 0.5em;
 }
 
 .nav-links{
@@ -40,45 +42,19 @@ nav{
 .nav-links a{
     color: white;
     text-decoration: none;
+    padding: 0.3em;
+    border-radius: 0.5em;
 }
 
 .nav-links a:hover{
-    color: #ffa9bc;
-}
-
-.hero{
-    height: 700px;
-    padding: 5em;
-    color: white;
-    /*fix the background*/
-    background-image: url(/git-hub/profolio/images/download.jfif);
-    background-size: 550px;
-    position: relative;
-}
-
-.link{
-    position: absolute;
-    top: 30em;
-    right: 50%;
-    padding: 0.5em;
-    border: 2px solid red;
-    text-decoration: none;
-    background-color: #b47c88;
-    color: #494f13;
-    
-}
-
-#pHero{
-    color: #ffffff;
-    position: absolute;
-    top: 15em;
-    font-size: 1.2em;
+    color: #a9acff;
+    background-color: #1f1f36bf;
 }
 
 h2{
     font-size: 2.6em;
     text-align: center;
-    color: #000000;
+    color: #daffef;
 }
 
 h3{
@@ -88,33 +64,221 @@ h3{
     margin-left: 1em;
 }
 
+footer{
+    padding: 2em;
+    background-color: #010d58;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+
+/*Index page style*/
+.hero{
+    height: 700px;
+    padding: 5em;
+    color: white;
+    /*fix the background*/
+    background-image: url(/git-hub/portfolio/images/dark-room-with-row-computer-monitors-large-window-with-words-game-it_188544-22283.avif);
+    background-size: 1600px;
+    position: relative;
+    border-bottom: #000000 solid 2px;
+}
+
+.link{
+    position: absolute;
+    top: 30em;
+    left: 45%;
+    padding: 0.5em;
+    border: 2px solid red;
+    text-decoration: none;
+    background-color: #ba455e;
+    color: #202308;
+    
+}
+
+#pHero{
+    padding: 1em;
+    background-color: #b47c8850;
+    color: #000000;
+    position: absolute;
+    top: 18em;
+    left: 1em;
+    font-size: 1.3em;
+}
+
 .main-sect{
     padding: 0em;
 }
 
-.sect1, .sect2, .sect4{
+.skills, .career, .technolgy, #about, .projects-index{
     margin: 2em;
+    padding: 1em;
 }
 
-.sect3{
-    background-color: #494f13;
+.projects-index{
+    display: grid;
+    grid-template-areas: 
+        "top top"
+        "side-1 side-2"
+    ;
+
+    justify-content: space-between;
+}
+
+#pro-title{
+    grid-area: top;
+}
+
+.pro-container{
+    padding: 1em;
+    background-color: #00128a;
+    margin: 0.5em;
+    color: white;
+}
+
+.item-1{
+    grid-area: side-1 ;
+}
+
+.item-2{
+    grid-area: side-2;
+}
+
+.quote{
+    background-color: #218589;
     width: 100%;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
-    padding: 0.5em;
+    padding: 1em;
 }
 
+/*Contact page style*/
 li{
     margin: 0.5em;
     list-style: none;
 }
 
 
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "left right"
+        "left right"
+        "map map"
+    ;
+}
+
+.contact-info{
+    background-color: rgb(255, 255, 255);
+    margin: 1em;
+    padding: 1em;
+    display: grid;
+    grid-area: "left";
+}
+
+span{
+    font-weight: bold;
+}
+
+form{
+    margin: 1em;
+    background-color: rgb(223, 223, 223);
+}
+
+label{
+    font-weight: bolder;
+    padding: 1em;
+}
+
+input{
+    margin-left: 1em;
+}
+
+textarea{
+    margin-left: 1em;
+}
+
+.map-section{
+    display: flex;
+    margin: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+button{
+    margin: 1em;
+}
 
 
-footer{
-    padding: 2em;
-    background-color: #494f13;
-    color: #052433;
+
+
+/*projects style*/
+
+.project-section{
+    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+/*project container*/
+.project{
+    padding: 2.1em;
+    background-color: #a2a9ce;
+    min-height: 20em;
+    height: auto;
+    border: solid #000000 0.1em;
+    /*Fix alignment issues*/
+    overflow-y: visible;
+}
+
+.project, p{
+    margin: 0.5em;
+}
+
+.project , h3{
+    color: #000000;
+    margin-left: 0;
+}
+
+.project-link{
+    position: relative;
+    top: 0.5em;
+    padding: 0.7em;
+    background-color: #26968d;
+    margin-top: 1em;
+    border: 2px solid #000000;
+    border-radius: 0.4em;
+
+}
+
+.project-link:link{
+    color: #494f13;
+}
+
+.project-link:hover{
+    background-color: #d4d9ff;
+}
+
+
+.project, li{
+    list-style: circle;
+}
+
+/*resume section style*/
+.resume-main{
+    margin: 2em;
+    padding: 1.5em;
+    background-color: white;
+}
+
+/*media quary section*/
+
+@media (max-width:620px){
+    .nav-links{
+        font-size: 0.6em;
+    }
 }
